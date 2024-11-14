@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "342734454015",
+    "firebase_url": "https://flutter-fire-9b22c-default-rtdb.firebaseio.com",
+    "project_id": "flutter-fire-9b22c",
+    "storage_bucket": "flutter-fire-9b22c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342734454015:android:3df872b16c0ba6f155a0ca",
+        "android_client_info": {
+          "package_name": "com.alimuhammad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcAnQhPGl5Dbc8y-6CRyorCf3WhcnQEeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342734454015:android:dd7d81c678bd41e255a0ca",
+        "android_client_info": {
+          "package_name": "com.example.snap_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcAnQhPGl5Dbc8y-6CRyorCf3WhcnQEeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
