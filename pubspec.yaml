@@ -59,9 +59,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/media/avator
-    - assets/media/back_video
-    - assets/media/banner
+    - assets/media/
 
   # fonts:
   #   - family: Gothic
