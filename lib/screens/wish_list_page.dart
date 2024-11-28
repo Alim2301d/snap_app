@@ -16,6 +16,7 @@ class WistListPage extends StatefulWidget {
 class _WistListPageState extends State<WistListPage> {
   final _titleCntrl = TextEditingController();
   final Future<FirebaseApp> _future = Firebase.initializeApp();
+  // ignore: unused_field
   final ScrollController _scrollController = ScrollController();
   String key = '';
   final WishDao wishDao = WishDao();
