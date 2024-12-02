@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
                       keyboardType: TextInputType.emailAddress,
                       onSaved: (value){
                         setState(() {
-                          email = value.toString()
+                          email = value.toString();
                         });
                       },
                     )
