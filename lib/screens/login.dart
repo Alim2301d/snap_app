@@ -6,11 +6,19 @@ class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
   static const String routeName = "/LoginPage";
 
+
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
+    final formKey = GlobalKey<FormState>();
+  final emailCntrl = TextEditingController();
+  final passCntrl = TextEditingController();
+  bool loginStatus = false;
+  String email='';
+  String password='';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,15 +33,29 @@ class _LoginPageState extends State<LoginPage> {
           margin: const EdgeInsets.all(10),
           child: Padding(
             padding: const EdgeInsets.all(10),
-            child: SizedBox(
-              width: MediaQuery.of(context).size.width / 2,
-              child: BeveledButton(
-                  title: "Login",
-                  onTap: () {
-                    Navigator.pushReplacementNamed(
-                        context, PageRoutes.wishListPage);
-                  }),
-            ),
+            child: SingleChildScrollView(
+              // physics: NeverScrollableScrollPhysics(),
+              child: SafeArea(child: Form(
+                key: formKey,
+                child: Column(
+                  children: <Widget>[
+                    TextFormField( 
+                      controller: emailCntrl,
+                      maxLength: 30,
+                      decoration: const InputDecoration(
+                        labelText: 'Email',
+                        hintText: 'Enter Email', 
+                      ),
+                      keyboardType: TextInputType.emailAddress,
+                      onSaved: (value){
+                        setState(() {
+                          email = value.toString()
+                        });
+                      },
+                    )
+                  ],
+                ))),
+            )
           ),
         ),
       ),
